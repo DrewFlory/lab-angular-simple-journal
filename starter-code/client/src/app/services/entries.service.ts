@@ -22,4 +22,9 @@ export class EntriesService {
     return this.http.post(`http://localhost:3000/api/journal-entries`, newJournalEntry)
       .map((res) => res.json());
   }
+
+  getOneEntry(theIdOfTheEntry){
+    return this.http.get(`http://localhost:3000/api/journal-entries/` + theIdOfTheEntry)
+      .map((responseThingy) => responseThingy.json());
+  }
 } 

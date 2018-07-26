@@ -18,7 +18,7 @@ export class EntryFormComponent implements OnInit {
   createEntry(){
       this.entries.createEntry(this.newEntryStuff)
       .subscribe((entry)=> {
-
+        
       })
      
   }}
