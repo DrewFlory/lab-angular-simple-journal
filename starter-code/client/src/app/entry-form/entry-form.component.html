@@ -1,0 +1,13 @@
+<form (submit)="createEntry()">
+
+    <div class="add">
+        <label>Title: </label>
+        <input name="name" [(ngModel)]="newEntryStuff.title">
+  
+        <label>Content: </label>
+        <input name="name" [(ngModel)]="newEntryStuff.content">
+        
+        <button>Submit</button>
+      </div>
+
+</form>
